@@ -22,11 +22,11 @@
             </div>
             <div class="navbar-end">
                 <img src="/assets/coin.png" alt="">
-                <p> <span id="account-tk">500 </span> BDT</p>
+                <p> <span id="account-tk">5000</span> BDT</p>
             </div>
         </div>
         <div class="flex gap-12 justify-center mt-10">
-            <button class="border rounded-lg px-5 py-2 ">Donation</button>
+            <button id="donation" class="border rounded-lg px-5 py-2 ">Donation</button>
             <button id="history" class="border rounded-lg px-5 py-2 ">History</button>
         </div>
 
@@ -34,7 +34,7 @@
 
     <main class="m-16">
         <!-- card section -->
-         <section id="card-hidden" class="">
+        <section id="card-hidden" class="">
             <div id="card" class="justify-between hero border rounded-lg my-2">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src="/assets/noakhali.png" class="max-w-full rounded-lg shadow-2xl" />
@@ -43,21 +43,23 @@
                             <img src="/assets/coin.png" alt="">
                             <p> <span id="total-donat">0</span> BDT</p>
                         </div>
-    
+
                         <h1 id="donat-title" class="text-5xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="py-6">
                             The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
                             donation will help provide essential supplies and to those affected by this disaster. Every
-                            contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                            contribution, big or small, makes difference. Please join us in supporting the relief
+                            efforts
                             and making a positive impact on the lives of those in need.
                         </p>
                         <input id="donate-in" class="border w-full mb-5 p-2" type="text"
                             placeholder="Write Donation Amount"> <br>
-                        <button id="donate-btn" class="w-full btn btn-primary text-black bg-[#B4F461]">Donate Now</button>
+                        <button id="donate-btn" class="w-full btn btn-primary text-black bg-[#B4F461]">Donate
+                            Now</button>
                     </div>
                 </div>
             </div>
-    
+
             <div id="card" class="justify-between hero border rounded-lg my-7">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src="/assets/feni.png" class="max-w-full rounded-lg shadow-2xl" />
@@ -66,13 +68,17 @@
                             <img src="/assets/coin.png" alt="">
                             <p>600 BDT</p>
                         </div>
-    
+
                         <h1 class="text-5xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
                         <p class="py-6">
-                            The recent floods in Feni have devastated local communities, leading to severe disruption and
-                            loss. Your generous donation will help provide immediate aid, including food, clean water, and
-                            medical supplies, to those affected by this calamity. Together, we can offer crucial support and
-                            help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a
+                            The recent floods in Feni have devastated local communities, leading to severe disruption
+                            and
+                            loss. Your generous donation will help provide immediate aid, including food, clean water,
+                            and
+                            medical supplies, to those affected by this calamity. Together, we can offer crucial support
+                            and
+                            help rebuild lives in the aftermath of this disaster. Every contribution counts towards
+                            making a
                             real difference. Please consider donating today to assist those in urgent need.
                         </p>
                         <input class="border w-full mb-5 p-2" type="text" placeholder="Write Donation Amount"> <br>
@@ -80,7 +86,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div id="card" class="justify-between hero border rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
                     <img src="/assets/quota-protest.png" class="max-w-full rounded-lg shadow-2xl" />
@@ -89,14 +95,17 @@
                             <img src="/assets/coin.png" alt="">
                             <p>0 BDT</p>
                         </div>
-    
+
                         <h1 class="text-5xl font-bold">Aid for Injured in the Quota Movement</h1>
                         <p class="py-6">
-                            The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                            The recent Quota movement has resulted in numerous injuries and significant hardship for
+                            many
                             individuals. Your support is crucial in providing medical assistance, rehabilitation, and
-                            necessary supplies to those affected. By contributing, you help ensure that injured individuals
+                            necessary supplies to those affected. By contributing, you help ensure that injured
+                            individuals
                             receive the care and support they need during this challenging time. Every donation plays a
-                            vital role in alleviating their suffering and aiding in their recovery. Please consider making a
+                            vital role in alleviating their suffering and aiding in their recovery. Please consider
+                            making a
                             donation to support these brave individuals in their time of need.
                         </p>
                         <input class="border w-full mb-5 p-2" type="text" placeholder="Write Donation Amount"> <br>
@@ -104,20 +113,18 @@
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <!-- history section -->
-          <section id="his-hid" class="hidden">
-            <div class="border p-3 rounded-lg">
-                <h1><span id="history-tk"></span> Taka is <span id="h-title"></span></h1>
-                <p> <span>Date : </span></p>
-            </div>
-          </section>
+        <!-- history section -->
+        <section id="his-hid" class="hidden">
+            
+        </section>
     </main>
 
     <script src="/js/add.js"></script>
     <script src="/js/utility.js"></script>
     <script src="/js/history.js"></script>
+    <script src="/js/donation.js"></script>
 </body>
 
 </html>
