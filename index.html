@@ -11,17 +11,17 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="sticky backdrop:blur">
         <div class="navbar p-4 bg-base-100 bg-[#F9F7F3]">
             <div class="navbar-start">
                 <button class="rounded-sm p-3 px-8 bg-[#B4F461]">Blog</button>
             </div>
             <div class="navbar-center">
-                <img src="/assets/logo.png" alt="">
+                <img src="./assets/logo.png" alt="">
                 <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
             </div>
             <div class="navbar-end">
-                <img src="/assets/coin.png" alt="">
+                <img src="./assets/coin.png" alt="">
                 <p> <span id="account-tk">5000</span> BDT</p>
             </div>
         </div>
@@ -37,10 +37,10 @@
         <section id="card-hidden" class="">
             <div id="card" class="justify-between hero border rounded-lg my-2">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="/assets/noakhali.png" class="max-w-full rounded-lg shadow-2xl" />
+                    <img src="./assets/noakhali.png" class="max-w-full rounded-lg shadow-2xl" />
                     <div>
                         <div class="flex">
-                            <img src="/assets/coin.png" alt="">
+                            <img src="./assets/coin.png" alt="">
                             <p> <span id="total-donat">0</span> BDT</p>
                         </div>
 
@@ -54,18 +54,19 @@
                         </p>
                         <input id="donate-in" class="border w-full mb-5 p-2" type="text"
                             placeholder="Write Donation Amount"> <br>
-                        <button id="donate-btn" class="w-full btn btn-primary text-black bg-[#B4F461]">Donate
+                        <button id="donate-btn" onclick="my_modal_1.showModal()" class="w-full btn btn-primary text-black bg-[#B4F461]">Donate
                             Now</button>
                     </div>
                 </div>
             </div>
+            
 
             <div id="card" class="justify-between hero border rounded-lg my-7">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="/assets/feni.png" class="max-w-full rounded-lg shadow-2xl" />
+                    <img src="./assets/feni.png" class="max-w-full rounded-lg shadow-2xl" />
                     <div>
                         <div class="flex">
-                            <img src="/assets/coin.png" alt="">
+                            <img src="./assets/coin.png" alt="">
                             <p>600 BDT</p>
                         </div>
 
@@ -89,10 +90,10 @@
 
             <div id="card" class="justify-between hero border rounded-lg">
                 <div class="hero-content flex-col lg:flex-row">
-                    <img src="/assets/quota-protest.png" class="max-w-full rounded-lg shadow-2xl" />
+                    <img src="./assets/quota-protest.png" class="max-w-full rounded-lg shadow-2xl" />
                     <div>
                         <div class="flex">
-                            <img src="/assets/coin.png" alt="">
+                            <img src="./assets/coin.png" alt="">
                             <p>0 BDT</p>
                         </div>
 
@@ -115,9 +116,28 @@
             </div>
         </section>
 
+
+        <!-- modal section -->
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+                <h3 class="text-3xl font-bold">Congrates!</h3>
+                <img src="./assets/coin.png" alt="">
+                <p class="py-4">You have donate for humankind</p>
+                <h1 class="text-xl font-semibold">Successful</h1>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close confermation</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
         <!-- history section -->
         <section id="his-hid" class="hidden">
-            
+
         </section>
     </main>
 
