@@ -1,27 +1,49 @@
-document.getElementById('donate-btn').addEventListener('click', function (e) {
-    e.preventDefault();
+// document.getElementById('donate-btn').addEventListener('click', function (e) {
+//     e.preventDefault();
 
-    if (isNaN(donatefiled()) || donatefiled() > account() || donatefiled() <= 0) {
-        alert('please enter valid amound');
-    }
+//     if (isNaN(inputField('donate-in')) || inputField('donate-in') > textField('account-tk') || inputField('donate-in') <= 0) {
+//         alert('please enter valid amound');
+//     }
+//     else {
+//         let tk =  textField('account-tk') - inputField('donate-in');
+//         document.getElementById('account-tk').innerText = tk;
+//         let donateNewTk = textField('total-donat') + inputField('donate-in');
+//         document.getElementById('total-donat').innerText = donateNewTk;
 
-    else {
+//         // history add
+//         history('donat-title');
+//     }
+// })
 
-        let tk = account() - donatefiled();
-        document.getElementById('account-tk').innerText = tk;
+// document.getElementById('donat-two').addEventListener('click', function (e) {
+//     e.preventDefault();
 
-        let donateNewTk = totalDonate() + donatefiled();
-        document.getElementById('total-donat').innerText = donateNewTk;
+//     if (isNaN(inputField('input-two')) || inputField('input-two') > textField('account-tk') || inputField('input-two') <= 0) {
+//         alert('please enter valid amound');
+//     }
+//     else {
+//         let tk =  textField('account-tk') - inputField('input-two');
+//         document.getElementById('account-tk').innerText = tk;
+//         let donateNewTk = textField('donatFiled') + inputField('input-two');
+//         document.getElementById('donatFiled').innerText = donateNewTk;
 
-        // history add
-        let title = document.getElementById('donat-title').innerText;
-        const historyf = document.createElement('div')
-        historyf.className = "p-4 rounded-md border my-4";
-        historyf.innerHTML = `<p> <span>${donatefiled()}</span> Taka is ${title}</p>
-        <p>${new Date().toLocaleTimeString()}</p>`
+//         // history add
+//         history('donat-title'); 
+//     }
+// })
+// // third card
+// document.getElementById('donat-three').addEventListener('click', function (e) {
+//     e.preventDefault();
 
-    }
+//     if (isNaN(inputField('input-three')) || inputField('input-three') > textField('account-tk') || inputField('input-three') <= 0) {
+//         alert('please enter valid amound');
+//     }
+//     else {
+//         let tk =  textField('account-tk') - inputField('input-three');
+//         document.getElementById('account-tk').innerText = tk;
+        
+//         let donateNewTk = textField('donate-tk') + inputField('input-three');
+//         document.getElementById('donate-tk').innerText = donateNewTk;
 
-
-
-})
+//     }
+// })
