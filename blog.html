@@ -11,28 +11,29 @@
 </head>
 
 <body>
-    <header class="sticky backdrop:blur"></header>
-    <div class="navbar p-4 bg-base-100 bg-[#F9F7F3]">
-        <div class="navbar-start">
-            <a class="rounded-xl p-3 px-6 bg-[#B4F461]" href="/index.html">Blog</a>
+    <header class="">
+        <div class="navbar p-2 lg:p-4 bg-base-100 bg-[#F9F7F3]">
+            <div class="navbar-start">
+                <a class="rounded-xl p-2 lg:p-3 px-2 lg:px-6 bg-[#B4F461]" href="/index.html">Blog</a>
+            </div>
+            <div class="navbar-center">
+                <img class="w-6 lg:w-10" src="./assets/logo.png" alt="">
+                <a class="btn btn-ghost text-sm lg:text-2xl">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <img src="./assets/coin.png" alt="">
+                <p class="text-sm lg:text-xl"> <span id="account-tk">5000</span> BDT</p>
+            </div>
         </div>
-        <div class="navbar-center">
-            <img src="./assets/logo.png" alt="">
-            <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
-        </div>
-        <div class="navbar-end">
-            <img src="./assets/coin.png" alt="">
-            <p> <span id="account-tk">5000</span> BDT</p>
-        </div>
-    </div>
 
     </header>
-    <main>
+    <main class="m-3">
         <div class="collapse collapse-arrow bg-base-200 border">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">What is the document object modal (DOM)?</div>
             <div class="collapse-content">
-                <p>Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content</p>
+                <p>Document Object Model (DOM) is a platform and language-neutral interface that allows programs and
+                    scripts to dynamically access and update the content</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 border">
@@ -50,16 +51,21 @@
         </div>
         <div class="collapse collapse-arrow bg-base-200 border">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">What is event delegation in context of the DOM, and why is it useful</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in context of the DOM, and why is
+                it useful</div>
             <div class="collapse-content">
-                <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+                <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a
+                    higher level in the DOM than the element on which the event originated.</p>
             </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 border">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you manipulate on elements attributes and styles using the DOM?</div>
+            <div class="collapse-title text-xl font-medium">How do you manipulate on elements attributes and styles
+                using the DOM?</div>
             <div class="collapse-content">
-                <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
+                <p>If you want to change other attributes like id , href , or src , you can use the setAttribute()
+                    method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value
+                    of the attribute to set.</p>
             </div>
         </div>
     </main>

@@ -21,6 +21,7 @@ function saveHistory(id1,id2,title){
     
         const historyContainer = document.getElementById('history-sec')
         const div = document.createElement('div');
+        div.classList= "border p-4 rounded-xl mt-4"
         div.innerHTML=`<p> <span>${amountTk}</span> Taka is ${title}</p>
                 <p>${new Date().toLocaleTimeString()}</p>`
         historyContainer.appendChild(div)
@@ -55,16 +56,6 @@ function showHistory(){
     const donationButton = document.getElementById('donation');
     donationButton.classList.remove('bg-[#B4F461]')
 
-    // history title and time
-    // history('donat-title' , 'input-three');
-    // let title = document.getElementById('donat-title').innerText;
-    // const history = document.createElement('div');
-    // history.className = "p-4 rounded-md border my-4";
-    // // inputField('donate-in')
-    // history.innerHTML = `<p> <span>${inputField('donate-in')}</span> Taka is ${title}</p>
-    //     <p>${new Date().toLocaleTimeString()}</p>`
-
-    // document.getElementById('history-sec').appendChild(history);
 }
 function showDonation(){
     
